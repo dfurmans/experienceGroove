@@ -1,0 +1,29 @@
+SBT
+
+> sbt publishLocal 
+install an lib (most probabl as a JAR) into a local ivy repository (~/.ivy2/local)
+
+
+Linux terminal tools
+
+Better cat -> batcat https://github.com/sharkdp/bat
+
+
+SBT
+
+>sbt "test:testOnly canon.class.name.TestABC"
+>sbt "it:testOnly can.class.nameTestBC"
+
+
+DOCKER
+
+> docker inspect C_ID
+
+> docker commit -m "a commit message" C_ID tag/l:latestSaved
+
+> docker history IMAGE_TAG
+
+How to restory docker image to any version tag in history
+> docker tag C_ID tag/ll:afterDoR1
+
+
