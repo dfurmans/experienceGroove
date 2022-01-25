@@ -23,7 +23,21 @@ DOCKER
 
 > docker history IMAGE_TAG
 
-How to restory docker image to any version tag in history
+#How to restory docker image to any version tag in history
 > docker tag C_ID tag/ll:afterDoR1
 
 
+SSH port forwarding
+
+#we are forwarding a port 2181 from 192.168.1.28 to a localhost (127.0.0.1)
+> ssh -v -L 192.168.1.28:2181:127.0.0.1:2181 -N -f user@remote_host -p custom_ssh_port
+
+BASH
+
+#check all TCP socket opened
+>netstat -tlpn
+
+MS SQL 
+
+SELECT * FROM sys.syslogins
+WHERE pwdcompare('somepassword', password) = 1
