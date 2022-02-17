@@ -47,3 +47,5 @@ JavaScript
 https://medium.com/@benlmsc/stop-using-console-log-d281a900dedb
 
 console.table
+console.time 
+console.timeEnd
