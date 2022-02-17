@@ -41,3 +41,9 @@ MS SQL
 
 SELECT * FROM sys.syslogins
 WHERE pwdcompare('somepassword', password) = 1
+
+
+JavaScript
+https://medium.com/@benlmsc/stop-using-console-log-d281a900dedb
+
+console.table
