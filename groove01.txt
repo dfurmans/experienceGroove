@@ -1,0 +1,23 @@
+// SBT - custom project configuration
+ test:sourceDirectories
+ 
+ projectName testing / it:sourceDirectories
+ 
+ projectName testing / test:sourceDirectories
+ 
+ 
+ // SCALA - simple time executor intereceptor
+ 
+  def time[A](a: => A) = {
+   val now = System.nanoTime
+   val result = a
+   val micros = (System.nanoTime - now) / 1000
+   println("%d microseconds".format(micros))
+ result
+ }
+
+ 
+ execution instance example
+ time { 2 * 2 }
+ 
+ 
