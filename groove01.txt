@@ -20,4 +20,24 @@
  execution instance example
  time { 2 * 2 }
  
- 
+
+
+// BASH 
+#SUCCESSFUL=false
+#echo -e "Waiting for WEB to start up by sleep WAITING_WEB_START_COUNTER = $WAITING_WEB_START_COUNTER sec \n "
+#until [ $WAITING_WEB_START_COUNTER -lt 1 ]; do
+#    echo -n "."
+#    content=$(cmd logs web | grep "Running the application") # WEB application LOG chunk pointed that APP has started correctly
+#    if [ -n "$content" ]; then
+#        WAITING_WEB_START_COUNTER=0
+#        SUCCESSFUL=true
+#    else
+#        WAITING_WEB_START_COUNTER=$((WAITING_WEB_START_COUNTER-1))
+#        sleep 1
+#    fi
+#done
+#if [ $SUCCESSFUL = false ]; then
+#    echo -e "Waited too long for a WEB to start. Dumping logs, ps, taking stack down and exiting \n"
+#    $DC down --volumes --rmi local
+#    exit 1
+#fi
